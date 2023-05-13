@@ -82,6 +82,12 @@ public class BasicController {
         return "basic/link";
     }
 
+    @GetMapping("literal")
+    public String literal(Model model) {
+        model.addAttribute("date", "Spring");
+        return "basic/literal";
+    }
+
 
     @Data
     static class User {
